@@ -1,3 +1,1 @@
-# MyRepository
-
-First repository
+# University task
