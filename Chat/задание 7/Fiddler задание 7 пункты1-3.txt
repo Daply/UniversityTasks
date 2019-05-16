@@ -1,0 +1,63 @@
+GET /chat/?token=TN11EN HTTP/1.1
+
+User-Agent: Composer
+
+Content-Length: 0
+
+Host: localhost:999
+
+{"messages":[{"id":"1","message":"Hi","user":"Johny"},{"id":"2","message":"What's up?","user":"Jenny"},{"id":"3","message":"Fine, and you?","user":"Johny"},{"id":"4","message":"Me too","user":"Jenny"}],"token":"TN43EN"}
+
+-------------------------------------------------------------------------------------------------------------------------------
+POST /chat/?token=TN11EN HTTP/1.1
+
+TextView:
+{"user":"Johny", "message":"Where have you been?"}
+
+User-Agent: Composer
+
+Content-Length: 50
+
+Host: localhost:999
+
+0
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+GET /chat/?token=TN11EN HTTP/1.1
+
+User-Agent: Composer
+
+Content-Length: 0
+
+{"messages":[{"id":"1","message":"Hi","user":"Johny"},{"id":"2","message":"What's up?","user":"Jenny"},{"id":"3","message":"Fine, and you?","user":"Johny"},{"id":"4","message":"Me too","user":"Jenny"},{"id":"5","message":"Where have you been?","user":"Johny"}],"token":"TN51EN"}
+
+-------------------------------------------------------------------------------------------------------------------------------
+DELETE /chat/?token=TN11EN HTTP/1.1
+
+TextView:
+{"id":"4"}
+
+User-Agent: Composer
+
+Content-Length: 10
+
+Host: localhost:999
+
+{"messages":[{"id":"1","message":"Hi","user":"Johny"},{"id":"2","message":"What's up?","user":"Jenny"},{"id":"3","message":"Fine, and you?","user":"Johny"},{"id":"5","message":"Where have you been?","user":"Johny"}],"token":"TN43EN"}
+
+-------------------------------------------------------------------------------------------------------------------------------
+PUT /chat/?token=TN11EN HTTP/1.1
+
+TextView:
+{"id":"3", "message":"Fine too, cockatoo!"}
+
+User-Agent: Composer
+
+Content-Length: 43
+
+Host: localhost:999
+
+{"messages":[{"id":"1","message":"Hi","user":"Johny"},{"id":"2","message":"What's up?","user":"Jenny"},{"id":"3","message":"Fine too, cockatoo!","user":"Johny"},{"id":"5","message":"Where have you been?","user":"Johny"}],"token":"TN43EN"}
+
+-------------------------------------------------------------------------------------------------------------------------------

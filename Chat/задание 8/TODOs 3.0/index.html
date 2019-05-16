@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+	<head lang="en">
+	    <meta charset="UTF-8">
+	    <title>My chat</title>
+	    <link rel="stylesheet" href="css/lib/bootstrap.css"/>
+	    <link rel="stylesheet" href="css/todo.css"/>
+	    <link rel="stylesheet" href="css/styles.css"/>
+	    <script src="js/jquery.js"></script>
+	    <script src="js/todo.js"></script>	    
+	</head>
+	<body background = "images/background2.jpg" align="all" onload="run();">
+	<div class="container-fluid app-container main">
+	    <div style="float:left; width:50%;">
+	    
+	  <h3 class="editable" id="edits" contenteditable = "true" onclick = "storeName()">
+	  Just Me
+	  </h3>
+
+     <div class="ava" >	
+         <img src="images/ava.jpg" >
+		 </div>
+     
+        <section class="mails">
+        
+        <div class="server_style">server:<span class="server">available</span></div>
+        
+	            <div class="input form-inline">
+	                <input id="mailText" type="text" class="form-control todo-input" placeholder="Наберите сообщение">
+	                <button id="addButton" type="button" class="btn btn-primary btn-add">Добавить</button>
+	                <button id="removeButton" type="button" onclick = "deleteMail()" class="btn btn-primary">Удалить выделенное</button>
+	                <button id="editButton" type="button" onclick = "storeChanges()" class="btn btn-primary">Сохранить изменения</button>
+	            </div>
+	            <hr>
+	            <div class="items"></div>
+	            <hr>
+	            <div class="nav">Всего: <span class="counter-holder">0</span> сообщений</div>
+	        </section>
+	    </div>
+		    <pre id="output" style="float:right; width:50%;">
+    </pre>
+	</div>
+	</body>
+	</html> 
