@@ -1,4 +1,4 @@
-# University task
+# University assignments
 
 Some university assignments:
 - Problem 1 is simple Java task: <br/>
