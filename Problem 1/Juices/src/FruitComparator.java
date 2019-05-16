@@ -1,7 +1,7 @@
 import java.util.Comparator;
 
 /**
- * Created by OK USER on 10.02.2015.
+ * Created by Daria Pleshchankova on 10.02.2015.
  */
 
 public class FruitComparator implements Comparator<String> {

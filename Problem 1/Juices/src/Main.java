@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Created by OK USER on 27.11.2014.
+ * Created by Daria Pleshchankova on 27.11.2014.
  */
 public class Main extends Thread{
 
