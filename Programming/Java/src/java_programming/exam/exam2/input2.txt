@@ -1,0 +1,4 @@
+A=trUe B=fAlSe C=true
+d=false
+b=FALse H=tRue
+a=true S=False

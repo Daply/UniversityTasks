@@ -1,0 +1,2 @@
+((NOT A)AND B)OR C; d OR b;
+d AND H ; (NOT a)OR S;

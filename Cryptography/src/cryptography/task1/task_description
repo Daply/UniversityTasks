@@ -1,0 +1,7 @@
+Implement classic cryptographic systems:
+1. Transposition cipher (for example Caesars)
+2. Substitution cipher
+3. Vigenère cipher
+4. Affine cipher
+Input: open text and key
+Output: cipher

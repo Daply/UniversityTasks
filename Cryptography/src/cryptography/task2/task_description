@@ -1,0 +1,9 @@
+Implement cryptographic systems:
+1. Electronic Code Book
+2. Cipher Block Chaining
+3. Propagating CipherBlock Chaining
+4. Cipher Feedback
+5. Output Feedback
+6. Counter Mode
+Input: open text and key
+Output: encrypted and decrypted texts

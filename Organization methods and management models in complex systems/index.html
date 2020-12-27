@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p style="margin-left:450px">Prepared by 4 year student of 6 group: Pleshchankova Daria</p>
+<p style="margin-left:380px">The condition of human infection - if there are 6 sick people in his environment</p>
+</head>
+<body>
+<div style="margin-left:470px">
+<canvas id="field"></canvas>
+<br>
+<input type="button" name="reset_field" value="Reset field" onclick="f_reset()"/>
+<select name="select_generation" id="select_generation" >
+<option selected value="0">Choose generation</option>
+<option value="1">1</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+</select>
+<input type="button" name="generation" value="Generation" onclick="f_generation(50)"/>
+<br>
+<div>
+<script>
+var field = document.getElementById("field");
+var context = field.getContext('2d');
+var N = 100;
+var n = N*4;
+field.width = n;
+field.height = n;
+var i,j,k;
+var x = new Array(N);
+for (i = 0; i < x.length; i++)
+     x[i] = new Array(N);
+var y = new Array(N);
+for (i = 0; i < y.length; i++)
+     y[i] = new Array(N);
+f_reset();	 
+
+function f_reset() {	
+	for (i = 0; i < n; i+=4){
+		for (j = 0; j < n; j+=4){
+			x[i/4][j/4] = Math.round(Math.random());
+			if(x[i/4][j/4]==1){
+				context.fillRect(i, j, 4, 4);
+				context.fillStyle = "rgb(0,0,0)";
+			}
+			else{
+				context.fillRect(i, j, 4, 4);
+				context.fillStyle = "rgb(193,193,193)";
+			}
+		}
+	}
+}	 
+
+function f_generation() {	//если 6 человек в окружении здорового болеют, то он автоматически заражается
+var generation = document.getElementById("select_generation").options.selectedIndex;
+var count = 0;	
+	for(g = 0; g < generation; g++){
+		for (i = 1; i < N-1; i++){
+			for (j = 1; j < N-1; j++){
+				count = 0;
+				if(x[i-1][j-1]==1){
+				  count++;
+				}
+				if(x[i-1][j]==1){
+				  count++;
+				}			
+				if(x[i-1][j+1]==1){
+				  count++;
+				}			
+				if(x[i][j-1]==1){
+				  count++;
+				}		
+				if(x[i][j+1]==1){
+				  count++;
+				}
+				if(x[i+1][j-1]==1){
+				  count++;
+				}
+				if(x[i+1][j]==1){
+				  count++;
+				}
+				if(x[i+1][j+1]==1){
+				  count++;
+				}
+				if(count >= 6){
+					x[i][j]=1;
+					context.fillRect(i*4, j*4, 4, 4);
+					context.fillStyle = "rgb(0,0,0)";
+				}
+			}
+		}
+	}
+}	
+</script>
+</body>
+</html>

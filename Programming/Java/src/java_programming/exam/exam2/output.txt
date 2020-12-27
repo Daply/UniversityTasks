@@ -1,0 +1,1 @@
+expressions with parenthetical=[((NOT A)AND B), (NOT A), (NOT a)]sorted expressions with parenthetical=[((NOT A)AND B), (NOT A), (NOT a)]

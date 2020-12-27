@@ -1,0 +1,3 @@
+Report on file 	file.bin
+milk	12	5472
+juice	23	2829
