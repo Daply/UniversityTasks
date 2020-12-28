@@ -24,7 +24,7 @@ The number of client processes is entered from the console.<br>
 - blocked if they request write access.
 
 1.5. After all client processes are finished, outputs the modified file to the console.<br>
-1.6. On command from the console, it ends its work.
+1.6. On command from the console, it ends its work.<br>
 2. Develop a Client process that performs the following actions:<br>
 2.1. Loops:<br>
 2.1.1. Asks the console to perform one of the following operations:<br>
