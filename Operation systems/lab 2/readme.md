@@ -1,6 +1,5 @@
 ## Topic: "Stream Creation".
 
-A task.<br>
 Write a console program for parallel matrix-vector multiplication. Program includes streams of two types: main and mul.<br>
 The mul thread should do the following:<br>
 1. Multiply the row of the square matrix by the vector.
