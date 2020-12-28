@@ -2,7 +2,7 @@
 ## Inheritance.
 
 1. Create an ArrayQueue class describing a queue on an integer array. The queue interface is shown below.
-
+```
 class ArrayQueue // queue on the array
 {
   int capacity; // queue capacity
@@ -20,9 +20,9 @@ bool is_empty () const; // is the queue empty?
 bool is_full () const; // is the queue full?
 void print (ostream & out) const; // view the items in the queue
 };
-
+```
 2. On the basis of the ArrayQueue class, create a class inheriting from ArrayDeque - a deque on an array (dek). The standard interface of the ArrayDeque class is shown below.
-
+```
 class ArrayDeque // deque is a deque on an array
 {
   int capacity; // deck capacity
@@ -42,9 +42,9 @@ public:
   bool is_full (); // dec full?
   void print (ostream & out) const; // view the deck items
 };
-
+```
 3. For the ArrayQueue class, create an iterator that loops through the queue in one direction. The iterator interface is shown below.
-
+```
 class ArrayQueueIterator
 {
   const ArrayQueue & a; // reference to the queue on the array
@@ -57,9 +57,9 @@ public:
   int & operator * () const; // display the element at the iterator position
   void operator ++ (); // move the iterator forward one position
 };
-
-4. Based on the ArrayQueueIterator for an array queue (ArrayQueue), implement an ArrayDequeIterator for an array deque (ArrayDeque). Additionally enable the following methods:
- Dump the iterator to the end of the queue.
- Advance the iterator one position back.
-
+```
+4. Based on the ArrayQueueIterator for an array queue (ArrayQueue), implement an ArrayDequeIterator for an array deque (ArrayDeque). Additionally enable the following methods:<br>
+- Dump the iterator to the end of the queue.<br>
+- Advance the iterator one position back.<br>
+<br>
 To check the performance of the classes, write a test program in which all the methods of the created classes are called.
