@@ -1,6 +1,5 @@
 ## Topic: “Semaphores. Developing Thread-Safe Classes ”.
 
-A task.<br>
 Write a class to control concurrent thread access to a ring queue.
 Implementation requirements:<br>
 1. Class interface for concurrent thread access control to the ring queue:
@@ -19,7 +18,7 @@ int Remove (); // remove the head element of the queue
 ```
 2. A ring queue is implemented by an array, whose elements are of type int. The size a circular queue is specified in the constructor.
 3. If the thread calls the Insert method, and the ring queue is full, then the method Insert should put this thread in a waiting state until it is removed from the ring queue of at least one element by another thread.
-4. If the thread calls the Remove method, and the ring queue is empty, then the Remove should put this thread in a waiting state before writing to the ring queue, at least one new element by another thread.
+4. If the thread calls the Remove method, and the ring queue is empty, then the Remove should put this thread in a waiting state before writing to the ring queue, at least one new element by another thread.<br>
 Additional requirements:
 To test the SyncQueue class, write a program for the console process that consists of a main thread and several consumer and producer threads.<br>
 The main thread should do the following:<br>
