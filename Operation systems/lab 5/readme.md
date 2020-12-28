@@ -42,7 +42,7 @@ The number of client processes is entered from the console.<br>
 2.3.5. On command from the console, sends the changed record to the server;<br>
 2.3.6. On command from the console, terminates write access.<br>
 2.4. When reading a record, the client process performs the following actions:<br>
-2.3.1. Requests a recording key;<br>
-2.3.2. Sends a request to the server;<br>
-2.3.3. Outputs the record received from the server to the console;<br>
-2.3.4. On command from the console, terminates write access.<br>
+2.4.1. Requests a recording key;<br>
+2.4.2. Sends a request to the server;<br>
+2.4.3. Outputs the record received from the server to the console;<br>
+2.4.4. On command from the console, terminates write access.<br>
