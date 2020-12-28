@@ -1,6 +1,5 @@
 ## Topic: "Synchronization of threads using critical sections and events. Processing dead ends ".
 
-A task.<br>
 Write a program for a console process, which consists of a main thread and multiple instances of the stream marker.<br>
 The main thread should do the following:<br>
 1. Grab memory for an array of integers, the dimension of which is entered from the console.
