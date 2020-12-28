@@ -48,5 +48,7 @@ use function:
  );
 ```
 where the second parameter is set to INFINITE, for example<br>
- WaitForSingleObject (hCreator, INFINITE);<br>
+```
+ WaitForSingleObject (hCreator, INFINITE);
+```
 Here hCreator is a handle to the Creator process.<br>
