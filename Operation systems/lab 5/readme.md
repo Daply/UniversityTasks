@@ -3,8 +3,8 @@
 Task:<br>
 write a program to control access of parallel processes to a file by anonymous channel.<br>
 Formulation of the problem.<br>
-1. Develop a server process that performs the following actions.<br>
-1.1. Creates a binary file whose entries have the following structure:<br>
+1. Develop a server process that performs the following actions.
+1.1. Creates a binary file whose entries have the following structure:
 ```
 struct student
 {
