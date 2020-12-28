@@ -8,13 +8,13 @@ The main thread should do the following:<br>
 4. Run the specified number of instances of the marker stream. As a parameter to each instance of the marker stream, pass its sequence number in the run.
 5. Give a signal to start work of all marker streams.
 6. Perform the following actions in the loop:
-6.1. Wait until all marker streams give impossible signals continue their work.
-6.2. Print the contents of the array to the console.
-6.3. Request from the console the sequence number of the marker stream to be served signal to complete its work.
-6.4. Give the stream marker, the number of which was obtained in paragraph 6.3, a signal to completion of work.
-6.5. Wait for the completion of the work of the marker stream, to which the signal was sent to completion of work in clause 6.4.
-6.6. Print the contents of the array to the console.
-6.7. Send a signal to continue work for the remaining streams marker.
+6.1. Wait until all marker streams give impossible signals continue their work.<br>
+6.2. Print the contents of the array to the console.<br>
+6.3. Request from the console the sequence number of the marker stream to be served signal to complete its work.<br>
+6.4. Give the stream marker, the number of which was obtained in paragraph 6.3, a signal to completion of work.<br>
+6.5. Wait for the completion of the work of the marker stream, to which the signal was sent to completion of work in clause 6.4.<br>
+6.6. Print the contents of the array to the console.<br>
+6.7. Send a signal to continue work for the remaining streams marker.<br>
 7. Finish your work after the completion of all marker streams.
 
 The marker stream should do the following:<br>
