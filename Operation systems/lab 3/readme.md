@@ -35,7 +35,7 @@ The marker stream should do the following:<br>
 - the index of the array element that cannot be marked.<br>
 3.4.2. Give a signal to the main thread that it cannot continue its work.<br>
 3.4.3. Wait for a response signal to continue or terminate work from the thread main.<br>
-4. If a signal to shutdown is received, then do the following:
-4.1. Fill all the elements that he marked with zeros in the array.
-4.2. To finish work.
+4. If a signal to shutdown is received, then do the following:<br>
+4.1. Fill all the elements that he marked with zeros in the array.<br>
+4.2. To finish work.<br>
 5. If a signal is received to continue work, then continue the execution of the cycle from point 3.
