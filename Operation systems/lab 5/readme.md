@@ -3,7 +3,7 @@
 Task:<br>
 write a program to control access of parallel processes to a file by anonymous channel.<br>
 Formulation of the problem.<br>
-1. Develop a server process that performs the following actions.
+1. Develop a server process that performs the following actions.<br>
 1.1. Creates a binary file whose entries have the following structure:<br>
 ```
 struct student
@@ -21,15 +21,17 @@ The number of client processes is entered from the console.<br>
 - if the client process requests modification of a file record, then access to this file record is blocked for other client processes until the client completes the modification of the record;<br>
 - if the client process requests to read a file record, then access to this record for others client processes:<br>
 - not blocked if they also request read access to data;<br>
-- blocked if they request write access.<br>
+- blocked if they request write access.
+
 1.5. After all client processes are finished, outputs the modified file to the console.<br>
-1.6. On command from the console, it ends its work.<br>
+1.6. On command from the console, it ends its work.
 2. Develop a Client process that performs the following actions:<br>
 2.1. Loops:<br>
 2.1.1. Asks the console to perform one of the following operations:<br>
-- modification of the file record;<br>
-- reading a record;<br>
-- exit from the cycle;<br>
+- modification of the file record;
+- reading a record;
+- exit from the cycle;
+
 2.1.2. After entering the required data, it performs this operation.<br>
 2.2. Access to the file records is carried out by the key, which is the student's record number.
 2.3. When a record is modified, the client process performs the following actions:<br>
