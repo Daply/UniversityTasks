@@ -12,14 +12,14 @@ The Creator utility creates a binary file, the name of which is obtained through
  };
 ```
 The Reporter utility creates a text file that contains a product report, description which are stored in a binary file created by Creator.<br>
-1. The utility receives the following data via the command line:
-1.1. Source binary file name.
-1.2. The name of the report file.
-1.3. The minimum number of product units.
-1.4. The minimum total cost of the item.
+1. The utility receives the following data via the command line:<br>
+1.1. Source binary file name.<br>
+1.2. The name of the report file.<br>
+1.3. The minimum number of product units.<br>
+1.4. The minimum total cost of the item.<br>
 2. The report includes data on the quantity and total cost of only those goods the number or total cost of which is less than the one specified on the command line.
-3. The report contains the following lines:
-3.1. Title: Report on the file "source binary file name".
+3. The report contains the following lines:<br>
+3.1. Title: Report on the file "source binary file name".<br>
 3.2. Lines: product name, number of product units, total product value.
 4. The total cost of the goods is calculated using the formula: amount * price.
 The Main program does the following:<br>
