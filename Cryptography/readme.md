@@ -8,6 +8,7 @@ Implement classic cryptographic systems:<br>
 3. Vigenère cipher
 4. Affine cipher
 5. Hill cipher
+<br>
 Input: open text and key<br>
 Output: cipher
 
@@ -20,5 +21,6 @@ Implement cryptographic systems:<br>
 4. Cipher Feedback
 5. Output Feedback
 6. Counter Mode
+<br>
 Input: open text and key<br>
 Output: encrypted and decrypted texts
