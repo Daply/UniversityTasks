@@ -1,9 +1,8 @@
 # University assignments
 
-Some university assignments:
-- Problem 1 is simple Java task: <br/>
-  There are a list of fruits for cooking fruit juices in the input file juices.in.
-  Every time the fruit is used to make a juice, the mixer should be washed for making other juice.
-  Find the minimal times you have to wash the mixer to mix all the fruits in the list.
-- Chat: <br/>
-  Simple chat application using Java, HTML, CSS, Javascript, MySQL
+[<b>Cryptography</b>](https://github.com/Daply/university-assignments/blob/master/Cryptography/readme.md)<br>
+[<b>Databases</b>](https://github.com/Daply/university-assignments/blob/master/Databases/readme.md)<br>
+[<b>Operation systems</b>](https://github.com/Daply/university-assignments/blob/master/Operation%20systems/readme.md)<br>
+[<b>Organization methods and management models in complex systems</b>](https://github.com/Daply/university-assignments/blob/master/Organization%20methods%20and%20management%20models%20in%20complex%20systems/readme.md)<br>
+[<b>Programming</b>](https://github.com/Daply/university-assignments/blob/master/Programming/readme.md)<br>
+[<b>Wolfram Mathematica</b>](https://github.com/Daply/university-assignments/blob/master/Wolfram%20Mathematica/readme.md)<br>
