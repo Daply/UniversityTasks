@@ -1,5 +1,5 @@
 
-Databases tasks:<br>
+# Databases
 <b>Lab 1</b> and <b>Lab 2</b> are done in DataModeler<br>
 [<b>Lab 3</b>](https://github.com/Daply/university-assignments/blob/master/Databases/lab%203/readme.md)<br>
 [<b>Lab 3.1</b>](https://github.com/Daply/university-assignments/blob/master/Databases/lab%203.1/readme.md)<br>
