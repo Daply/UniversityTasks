@@ -17,7 +17,7 @@ a) BufferedReader br = new BufferedReader (new FileReader (...));
 b) Scanner sc = new Scanner (new FileInputStream (...));
 ```
 
-5. Subtraction of 2 large numbers:<br>
+Subtraction of 2 large numbers:<br>
 write a program that finds the difference of 2 large numbers: <br>
 ie. represent the number as an array (0 is the ones place, 1 is the tens place, etc.) and find the difference between these 2 numbers.<br>
 <b>NOTE:</b> you can also enter not very long numbers, the very essence of solving the problem is important, but if you want to try with large numbers, then there is an example at the end of the document.<br>
@@ -147,13 +147,13 @@ Tz`RD[=61.0F?(sr{G>S45.34v?%)>u65.88"@ynUcik@21.0C#?)$NK!\&L11.0qr%:bq=#G31.75Mb
 (-x - 5)^3 - (-x + 5)^2 - 5;
 <br>
 
-String to decode:<br>
+<b>String to decode:</b><br>
 obsndod !k egoRaiog
 
 <br>
 
 <br>
-For testing:<br>
+<b>For testing:</b><br>
 To make a second string use strings of 19 symbols and cipher it according these symbols numbers:<br>
 
  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19<br>
