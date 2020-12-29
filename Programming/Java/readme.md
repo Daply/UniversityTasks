@@ -140,7 +140,9 @@ f) compose and display the permutation matrix - 2b<br>
 g) input of the second line and the correct number of words in it - 1b<br>
 
 <b>Input string:</b><br>
+<p>
 Tz`RD[=61.0F?(sr{G>S45.34v?%)>u65.88"@ynUcik@21.0C#?)$NK!\&L11.0qr%:bq=#G31.75Mbu@g%38.05c=+ZS{/+C28.0jZ&r$"ogGn*OH97.0t>xi64.79;tE"yShP[42.57pAFcY2.71P\yg+27.0{%oEi@_i]OJs30.0U_)RIlsk2.41o?!@C&*\TT7.22C`+zCE^#20.41Xt 58.0%fMVD-^NSSC29.0
+</p>
 <br>
 
 <b>Function:</b><br>
