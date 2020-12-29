@@ -12,10 +12,10 @@ The result should be displayed with five digits after the decimal point.<br>
 Tasks for laboratory work number 2 by arrays.<br>
 You can perform any task you like more, but it is desirable that each other does not have Copy-Paste.<br>
 Enter data into the program from the console, but if it is more convenient for someone to enter from a file - please, this is only a plus. To read from a file you can use<br>
-```java
+```
 a) BufferedReader br = new BufferedReader (new FileReader (...));
 b) Scanner sc = new Scanner (new FileInputStream (...));
-java```
+```
 
 5. Subtraction of 2 large numbers:<br>
 write a program that finds the difference of 2 large numbers: <br>
@@ -23,7 +23,7 @@ ie. represent the number as an array (0 is the ones place, 1 is the tens place, 
 <b>NOTE:</b> you can also enter not very long numbers, the very essence of solving the problem is important, but if you want to try with large numbers, then there is an example at the end of the document.<br>
 
 Example:<br>
-```java
+```
 try {
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 String line = br.readLine();
@@ -40,16 +40,16 @@ number = Arrays.copyOf(number, j);
             System.out.println("IOException occurred");
             e.printStackTrace();
 }
-java```
+```
 
 ## Lab #3
 Tasks for laboratory work number 3 on matrices.<br>
 You can perform any task you like more, but it is desirable that each other does not have Copy-Paste.<br>
 Enter data into the program from the console, but if it is more convenient for someone to enter from a file - please, this is only a plus. To read from a file you can use<br>
-```java
+```
 a) BufferedReader br = new BufferedReader (new FileReader (...));
 b) Scanner sc = new Scanner (new FileInputStream (...));
-java```
+```
 
 ## Lab #4 Strings
 
@@ -157,7 +157,7 @@ For testing:<br>
 To make a second string use strings of 19 symbols and cipher it according these symbols numbers:<br>
 
  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19<br>
-16 14 18  6  4 11 12  8 19 17 13  2  7 10  1  3  5 15  9
+16 14 18  6  4 11 12  8 19 17 13  2  7 10  1  3  5 15  9<br>
 
 <b>For example:</b><br>
 Living free in life<br>
