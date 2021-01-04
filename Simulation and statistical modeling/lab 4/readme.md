@@ -4,6 +4,8 @@
 <b>Exercise 1.</b><br>
 Using the Monte Carlo method, calculate the approximate value of certain integrals.
 
+![integral](https://github.com/Daply/university-assignments/blob/master/Simulation%20and%20statistical%20modeling/lab%204/exercise_1.png)
+
 Check simulation accuracy:<br>
 1. Compare the obtained value either with the exact value (if it can be calculated), or with the approximate one obtained in any mathematical package (for example, in mathematica).
 2. Compare also with the method based on quadrature formulas (Gauss CF, Bode CF, Wedl CF).
