@@ -27,7 +27,7 @@ For each generator (three linear and Maclaurin-Marsagli generator), check the si
 
 The developed software must be implemented in such a way that<br>
 
-Exercise 1<br>
+<b>Exercise 1</b><br>
 Read the parameters of the linear congruential generator from the inputLC.txt file:<br>
 The first line of the file contains the number x<sub>0</sub> - the initial value,<br>
 the second line a ≠ 0 is a factor,<br>
@@ -41,18 +41,18 @@ The ninth line contains the number of memory locations of the Maclaurin-Marsagli
 Tenth row n - sample length<br>
 Output file outputLC.txt, outputMM.txt contains:<br>
 (output precision up to 10 decimal places)<br>
-First line<br>
+<b>First line</b><br>
 The value of the stat. estimating the parameter mat. expect.<br>
-Second line<br>
+<b>Second line</b><br>
 Accepted hypothesis, Value of statistics for hypothesis testing for n<sub>1</sub> = 10000 threshold, significance level<br>
 Third line Accepted hypothesis, Value of statistics for hypothesis testing for n<sub>2</sub> = 10<sup>6</sup>, threshold, significance level<br>
-Fourth line<br>
+<b>Fourth line</b><br>
 The value of the stat. variance parameter estimates<br>
 Fifth line: Accepted hypothesis, Value of statistics to test the hypothesis for n<sub>1</sub> = 10000, threshold, significance level<br>
 Sixth line Accepted hypothesis, Value of statistics for testing the hypothesis for n<sub>2</sub> = 10<sup>6</sup>, threshold, level of significance<br>
-COVARIATION<br>
-From the seventh to the 17th lines, the values ​​of the statistics covariance (for n<sub>1</sub> = 10000), the accepted hypothesis, threshold, significance level<br>
-17th line to 27th line contains the values ​​of the statistics covariance (for n<sub>2</sub> = 10<sup>6</sup>), the accepted hypothesis, threshold, significance level<br>
+<b>COVARIATION</b><br>
+From the seventh to the 17th lines, the values of the statistics covariance (for n<sub>1</sub> = 10000), the accepted hypothesis, threshold, significance level<br>
+17th line to 27th line contains the values of the statistics covariance (for n<sub>2</sub> = 10<sup>6</sup>), the accepted hypothesis, threshold, significance level<br>
 28 line Chi-square value of Pearson statistics for (for n<sub>1</sub> = 10000), accepted hypothesis, threshold, significance level<br>
 29 line Chi-square value of Pearson statistics for (for n<sub>2</sub> = 10<sup>6</sup>), accepted hypothesis, threshold, significance level<br>
 
