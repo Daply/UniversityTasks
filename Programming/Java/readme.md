@@ -1,6 +1,7 @@
 ## Lab #1
 Develop a Java Console Application.<br>
 The function is presented as its own Taylor series.<br>
+![integral](https://github.com/Daply/university-assignments/blob/master/Programming/Java/pictures_for_readme/Lab1.PNG)<br>
 Calculate the approximate value of the sum of this infinite series.<br>
 Finish the calculations when the next term is less than the given number ε (Epsilon) in absolute value.<br>
 The form of this number is determined by the following condition: ε = 10-k, where k is a natural number.<br>
