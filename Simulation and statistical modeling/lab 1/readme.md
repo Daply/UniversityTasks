@@ -1,5 +1,5 @@
 
-## Lab1
+## Lab 1
 
 Simulate a continuous, uniformly distributed on the half-interval [0, 1) random variable.<br>
 
