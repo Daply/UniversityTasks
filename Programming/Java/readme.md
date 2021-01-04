@@ -167,7 +167,8 @@ becomes<br>
 lnfgie feiii eLvn r
 
 
-
+## Studying practice
+[<b>Studying practice task</b>](https://github.com/Daply/university-assignments/blob/master/Programming/Java/Studying%20Practice/readme.md)
 
 
 
