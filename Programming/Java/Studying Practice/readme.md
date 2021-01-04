@@ -1,6 +1,8 @@
 
 ## Studying practice
 
+[<b>Web Chat Application</b>](https://github.com/Daply/university-assignments/blob/master/Programming/Java/Studying%20Practice/Chat/WebChatApplication/readme.md)
+
 A task.<br>
 To create a simple web chat application (using java, javascript, html, css), where it is possible to:<br>
 - send messages
