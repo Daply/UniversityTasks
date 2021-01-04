@@ -1,0 +1,104 @@
+
+
+
+#include <iostream>
+using namespace std;
+
+void main()
+{
+       double eps = 0.01;
+
+       double X = 1.0;
+       double S = 0;
+         double N =  0;
+        double D   = 2.;
+
+
+        double edm =-1.;
+
+
+        double ed  = 1.;
+          double P   = X;
+        double R,H; 
+
+
+		double M=1.0;
+		double B=2.0;
+        
+         int sw;
+_asm {
+        finit
+        fld     M     // ; st(0)=1
+        fstp    S       //;s=1
+
+
+L1:     fld     N      //  ;n -- st(0)
+        fmul    D      //  ;2*n --st(0)
+		fadd    B      //  ;2*n+2
+        fst     R      //  ;st(0) --> R, R contains formula denominator
+        fld     B      //  ;2*n+2 --> st(0) 
+        fsub    M      //  ;2*n+1
+        fdiv    R      //  ;deviding stack on denominator  2*n+1/2*n+2
+        fmul     edm    //   ;multiplying on -1
+
+      //  ;now whole the fraction is in stack
+        
+  
+
+
+        fmul P      // ; constantly multiplying on x
+
+        fst  P      //  ; element
+		      
+        fld P
+
+        fadd    S      // ; adding content of stack to S and etc., for getting a formula
+        fstp    S
+
+
+
+        fld     N
+        fadd    ed     //  ;n=n+1
+        fstp    N
+
+
+
+        finit
+        fld     P
+        fabs            //;|p|
+
+
+
+
+
+fcom    eps     //;comparison
+                        //;Eps>st(0) c3=0 c2=0 c0=1
+                        //;Eps<st(0) c3=0 c2=0 c0=0
+                        //;Eps=st(0) c3=1 c2=0 c0=0
+        fstsw   sw     // ;status word to main processor
+        fwait          // ;waiting operation execution
+        mov eax,sw
+      and     ax,0700h   
+// or    sahf  saves  ah->processor flags register
+//and then         je     L1
+
+        cmp     ah,0
+        je     L1
+        finit
+
+
+
+
+        fld     X
+        fadd    M
+		fsqrt
+        fstp     H
+		fld     M
+		div     H
+		fstp     H
+}
+		printf ("%lf %lf ",S,H);
+
+
+    system("pause");
+}

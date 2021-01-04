@@ -1,0 +1,310 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11126,        301]
+NotebookOptionsPosition[     10808,        285]
+NotebookOutlinePosition[     11152,        300]
+CellTagsIndexPosition[     11109,        297]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"chiSquare", "[", 
+   RowBox[{"sample_", ",", "k_", ",", "dist_", ",", "\[Epsilon]_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"cells", ",", "h", ",", "H", ",", "i", ",", " ", 
+      RowBox[{"n", "=", 
+       RowBox[{"Length", "[", "sample", "]"}]}], ",", 
+      RowBox[{"ni", "=", "0"}], ",", "pi", ",", 
+      RowBox[{"Xleft", "=", "0"}], ",", "Xright", ",", "\[IndentingNewLine]", 
+      RowBox[{"sortSample", "=", 
+       RowBox[{"Sort", "[", "sample", "]"}]}], ",", 
+      RowBox[{"pos", "=", "1"}], ",", "Xmin", ",", "Xmax", ",", 
+      RowBox[{"\[Chi]2", " ", "=", "0"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Print", "[", "sortSample", "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Xmin", "=", 
+      RowBox[{
+      "sortSample", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}], 
+     ";", 
+     RowBox[{"Print", "[", "Xmin", "]"}], ";", 
+     RowBox[{"Xmax", "=", 
+      RowBox[{
+      "sortSample", "\[LeftDoubleBracket]", "n", "\[RightDoubleBracket]"}]}], 
+     ";", 
+     RowBox[{"h", "=", 
+      FractionBox[
+       RowBox[{"Xmax", "-", "Xmin"}], "k"]}], ";", " ", 
+     RowBox[{"Xright", "=", 
+      RowBox[{"Xmin", "+", "h"}]}], ";", 
+     RowBox[{"pi", "=", 
+      RowBox[{"CDF", "[", 
+       RowBox[{"dist", ",", 
+        RowBox[{"N", "[", "Xright", "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"i", "=", "1"}], ",", 
+       RowBox[{"i", "<", "k"}], ",", 
+       RowBox[{"i", "++"}], ",", 
+       RowBox[{
+        RowBox[{"While", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+           "sortSample", "\[LeftDoubleBracket]", "pos", 
+            "\[RightDoubleBracket]"}], "<", "Xright"}], ",", 
+          RowBox[{
+           RowBox[{"ni", "++"}], ";", 
+           RowBox[{"pos", "++"}]}]}], "]"}], " ", ";", " ", 
+        RowBox[{"\[Chi]2", "+=", 
+         FractionBox[
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"ni", "-", 
+             RowBox[{"n", " ", "pi"}]}], ")"}], "2"], 
+          RowBox[{"n", " ", "pi"}]]}], ";", 
+        RowBox[{"ni", "=", "0"}], ";", " ", 
+        RowBox[{"Xleft", "=", "Xright"}], ";", 
+        RowBox[{"Xright", "+=", "h"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"pi", "=", 
+         RowBox[{
+          RowBox[{"CDF", "[", 
+           RowBox[{"dist", ",", 
+            RowBox[{"N", "[", "Xright", "]"}]}], "]"}], "-", 
+          RowBox[{"CDF", "[", 
+           RowBox[{"dist", ",", 
+            RowBox[{"N", "[", "Xleft", "]"}]}], "]"}]}]}]}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Xleft", "=", 
+      RowBox[{"Xmax", "-", "h"}]}], ";", 
+     RowBox[{"pi", "=", 
+      RowBox[{"1", "-", 
+       RowBox[{"CDF", "[", 
+        RowBox[{"dist", ",", 
+         RowBox[{"N", "[", "Xleft", "]"}]}], "]"}]}]}], ";", 
+     RowBox[{"pos", "=", "n"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+        "sortSample", "\[LeftDoubleBracket]", "pos", 
+         "\[RightDoubleBracket]"}], ">", "Xleft"}], ",", 
+       RowBox[{
+        RowBox[{"ni", "++"}], ";", 
+        RowBox[{"pos", "--"}]}]}], "]"}], ";", 
+     RowBox[{"\[Chi]2", "+=", 
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"ni", "-", 
+          RowBox[{"n", " ", "pi"}]}], ")"}], "2"], 
+       RowBox[{"n", " ", "pi"}]]}], " ", ";", " ", 
+     RowBox[{"Return", "[", 
+      RowBox[{"N", "[", "\[Chi]2", "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+   " ", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"kolmogorov", "[", 
+   RowBox[{"sample_", ",", "n_", ",", "dist_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"D", ",", "difference", ",", "i", ",", "H", ",", 
+      RowBox[{"Fe", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"i", "-", "1"}], "n"], ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", "n"}], "}"}]}], "]"}]}], ",", 
+      RowBox[{"k", "=", "1"}], ",", "left", ",", "S", ",", 
+      RowBox[{"sortSample", "=", 
+       RowBox[{"Sort", "[", "sample", "]"}]}]}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"D", "=", 
+      RowBox[{"Max", "[", 
+       RowBox[{"Abs", "[", 
+        RowBox[{"Fe", "-", 
+         RowBox[{"CDF", "[", 
+          RowBox[{"dist", ",", "sortSample"}], "]"}]}], "]"}], "]"}]}], ";", 
+     " ", 
+     RowBox[{"S", "=", 
+      RowBox[{
+       SqrtBox["n"], "D"}]}], ";", "\[IndentingNewLine]", " ", 
+     RowBox[{"Return", "[", "S", "]"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"root", "=", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cdf", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"root", "<>", "\"\<CDF.txt\>\""}], ",", "\"\<List\>\""}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Num", " ", "=", " ", "1000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Epsilon]", "=", " ", "0.05"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"m", " ", "=", " ", "7"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Alpha]", " ", "=", " ", "6"}], ";"}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Beta]", " ", "=", " ", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"k", " ", "=", " ", "4"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"seq", " ", "=", " ", 
+   RowBox[{"Table", "[", 
+    RowBox[{"0", ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "Num"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
+   RowBox[{"i", "<=", " ", "Num"}], ",", " ", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{
+    RowBox[{"seq", "[", 
+     RowBox[{"[", "i", "]"}], "]"}], "=", 
+    RowBox[{"cdf", "[", 
+     RowBox[{"[", "i", "]"}], "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dist", " ", "=", " ", 
+   RowBox[{"cdf", "[", 
+    RowBox[{"[", 
+     RowBox[{"Num", "+", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"k", " ", "=", " ", 
+   RowBox[{"cdf", "[", 
+    RowBox[{"[", 
+     RowBox[{"Num", "+", "2"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"chi", " ", "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"kol", " ", "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{"dist", "\[Equal]", "\"\<Student\>\""}], ",", 
+   RowBox[{
+    RowBox[{"chi", " ", "=", " ", 
+     RowBox[{"chiSquare", "[", 
+      RowBox[{"seq", ",", "k", ",", 
+       RowBox[{"StudentTDistribution", "[", "m", "]"}], ",", "\[Epsilon]"}], 
+      "]"}]}], ";", 
+    RowBox[{"kol", " ", "=", " ", 
+     RowBox[{"kolmogorov", "[", 
+      RowBox[{"seq", ",", "Num", ",", 
+       RowBox[{"StudentTDistribution", "[", "m", "]"}]}], "]"}]}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{"dist", "\[Equal]", "\"\<Gamma\>\""}], ",", 
+   RowBox[{
+    RowBox[{"chi", " ", "=", " ", 
+     RowBox[{"chiSquare", "[", 
+      RowBox[{"seq", ",", "k", ",", 
+       RowBox[{"GammaDistribution", "[", 
+        RowBox[{"\[Alpha]", ",", "\[Beta]"}], "]"}], ",", "\[Epsilon]"}], 
+      "]"}]}], ";", 
+    RowBox[{"kol", " ", "=", " ", 
+     RowBox[{"kolmogorov", "[", 
+      RowBox[{"seq", ",", "Num", ",", 
+       RowBox[{"GammaDistribution", "[", 
+        RowBox[{"\[Alpha]", ",", "\[Beta]"}], "]"}]}], "]"}]}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"dist", "\[Equal]", "\"\<Chisquare\>\""}], ",", 
+    RowBox[{
+     RowBox[{"chi", " ", "=", " ", 
+      RowBox[{"chiSquare", "[", 
+       RowBox[{"seq", ",", "k", ",", 
+        RowBox[{"ChiSquareDistribution", "[", "k", "]"}], ",", "\[Epsilon]"}],
+        "]"}]}], ";", 
+     RowBox[{"kol", " ", "=", " ", 
+      RowBox[{"kolmogorov", "[", 
+       RowBox[{"seq", ",", "Num", ",", 
+        RowBox[{"ChiSquareDistribution", "[", "k", "]"}]}], "]"}]}]}]}], 
+   "]"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"file", "=", 
+   RowBox[{"root", "<>", "\"\<CDFresult.txt\>\""}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"file", ",", 
+    RowBox[{"{", 
+     RowBox[{"chi", ",", " ", "kol"}], "}"}]}], " ", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6868338908496094`*^9, 3.6868339063271484`*^9}, {
+   3.6868340058242188`*^9, 3.6868340063398438`*^9}, {3.6868341128710938`*^9, 
+   3.686834119015625*^9}, {3.6868341630527344`*^9, 3.6868341854501953`*^9}, {
+   3.686834236510742*^9, 3.686834237057617*^9}, {3.6868344812089844`*^9, 
+   3.6868345004746094`*^9}, {3.6868353672978516`*^9, 3.686835384609375*^9}, {
+   3.6868415257578125`*^9, 3.686841551569336*^9}, {3.6868418094970703`*^9, 
+   3.6868418096064453`*^9}, 3.6868418724853516`*^9, {3.6868420176191406`*^9, 
+   3.6868420179160156`*^9}, {3.686842207584961*^9, 3.6868422145390625`*^9}, {
+   3.686842443260742*^9, 3.6868424722539062`*^9}, {3.6869420056953125`*^9, 
+   3.6869420713916016`*^9}, {3.6869421029521484`*^9, 3.6869421088271484`*^9}, 
+   3.6869422894873047`*^9, {3.686945847595703*^9, 3.686945883591797*^9}, {
+   3.686945915504883*^9, 3.6869459259990234`*^9}, {3.686946824666992*^9, 
+   3.686946829948242*^9}, 3.686953344557617*^9, {3.688803291591319*^9, 
+   3.6888034563462086`*^9}, {3.688803493037473*^9, 3.6888036782097983`*^9}, {
+   3.6888037346602983`*^9, 3.68880376405075*^9}, {3.68880385489091*^9, 
+   3.6888039540902843`*^9}, {3.688804115159768*^9, 3.688804136453806*^9}, {
+   3.688804267858137*^9, 3.688804314564619*^9}, {3.6888043609123*^9, 
+   3.688804375467126*^9}, {3.6888044245884113`*^9, 3.68880448042091*^9}, {
+   3.6888045127909665`*^9, 3.688804573631074*^9}, {3.688804644127597*^9, 
+   3.6888046505236087`*^9}, {3.6888047023624997`*^9, 
+   3.6888047257157407`*^9}, {3.6888047608470025`*^9, 
+   3.6888047613150034`*^9}, {3.688804796071864*^9, 3.688804796352665*^9}}],
+
+Cell[BoxData["11.67846395`"], "Output",
+ CellChangeTimes->{3.6888047293817472`*^9, 3.6888047672586136`*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 505},
+WindowMargins->{{104, Automatic}, {Automatic, 39}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 10103, 257, 931, "Input"],
+Cell[10685, 281, 107, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

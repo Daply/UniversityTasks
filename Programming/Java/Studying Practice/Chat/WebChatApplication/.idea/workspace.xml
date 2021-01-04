@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a13f31e-44c8-42e1-ade3-ee6fc0da6cd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/chat/storage/sql/MessageSQLStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3 bonus task/lab_3_chessplayers.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3 bonus task/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3.1/lab_3_1_create_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3.1/lab_3_1_select.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3.1/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3.2/lab_3_2_select.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3.2/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3/lab_3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 3/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 4/lab_4_create_tables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 4/lab_4_update_delete.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 4/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 5/lab_5_views.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 5/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 6 final work on selects/lab_6_final_work_SELECT.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 6 final work on selects/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 7/lab_7_PL_SQL_procedures.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 7/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 8/lab_8_PL_SQL_trigger.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/lab 8/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Databases/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/artifacts/Chat_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/artifacts/Chat_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/sonarlint/issuestore/1/0/10bb0287f1e0a40d782ee57ec031cef7c33839b3" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/sonarlint/issuestore/1/0/10bb0287f1e0a40d782ee57ec031cef7c33839b3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/Chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/Chat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/todos/controller/MessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/chat/controller/MessageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/todos/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/chat/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/todos/model/MessageStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/chat/storage/xml/MessageXMLStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/todos/storage/xml/XMLHistoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/chat/util/XMLHistoryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/todos/util/ServletUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/chat/util/ServletUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/todos/util/TaskUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/java/org/exadel/chat/util/MessageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/webapp/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/webapp/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/src/main/webapp/js/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/WEB-INF/classes/org/exadel/todos/controller/MessageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/WEB-INF/classes/org/exadel/todos/model/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/WEB-INF/classes/org/exadel/todos/model/MessageStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/WEB-INF/classes/org/exadel/todos/storage/xml/XMLHistoryUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/WEB-INF/classes/org/exadel/todos/util/ServletUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/WEB-INF/classes/org/exadel/todos/util/TaskUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/images/ava2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/Chat/js/chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/classes/META-INF/Chat.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/classes/org/exadel/todos/controller/MessageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/classes/org/exadel/todos/model/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/classes/org/exadel/todos/model/MessageStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/classes/org/exadel/todos/storage/xml/XMLHistoryUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/classes/org/exadel/todos/util/ServletUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/Chat/target/classes/org/exadel/todos/util/TaskUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/WebChatApplication/MySql/chat.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Chat/WebChatApplication/MySql/chat.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/css/lib/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/css/todo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/images/ava.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/images/ava2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/images/background1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/images/background2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/images/select.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/js/todo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Chat/verion2(LocalStorage)/save" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1mbWM00PMDPj9UA67LcOZ642jZH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_WebChatApplication" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55905" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a13f31e-44c8-42e1-ade3-ee6fc0da6cd3" name="Default Changelist" comment="" />
+      <created>1609762718926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609762718926</updated>
+      <workItem from="1609762720691" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609762823101">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1609762823101" />
+  </component>
+</project>
